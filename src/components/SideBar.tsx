@@ -167,6 +167,9 @@ export default function SideBar() {
           </div>
           <span className="absolute right-0 h-5/6 top-1/2 -translate-y-1/2 w-0.5 bg-white/30" />
         </div>
+        <footer className=" md:hidden flex justify-center text-center w-full  text-neutral-500 text-sm p-4 absolute bottom-0 left-1/2 -translate-x-1/2">
+          &copy; 2025 Nathan Alspaugh
+        </footer>
       </div>
     </>
   );

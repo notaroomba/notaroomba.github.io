@@ -12,6 +12,62 @@ interface Project {
 export default function ProjectsSection() {
   const projects: Project[] = [
     {
+      name: "Athena",
+      url: "https://github.com/NotARoomba/Athena",
+      description:
+        "Athena is a high-performance flight computer designed for advanced rocketry applications. The board features a sophisticated 6-layer PCB design with dedicated power planes and optimized signal routing.",
+      githubUrl: "https://github.com/NotARoomba/Athena",
+      imageSrc: "/images/athena.png",
+    },
+    {
+      name: "Cyberboard",
+      url: "https://github.com/NotARoomba/Cyberboard",
+      description:
+        "A Cyberpunk-themed Raspberry Pi Pico-sized STM32 development board with Bluetooth and battery support! It features an STM32WB55, BQ24074 battery charger, USB-C port, and SWD programming/debugging interface. Perfect for low-power and wireless applications.",
+      githubUrl: "https://github.com/NotARoomba/Cyberboard",
+      imageSrc: "/images/cyberboard.png",
+    },
+    {
+      name: "Cybercard",
+      url: "https://github.com/NotARoomba/Cybercard",
+      description:
+        "A Cyberpunk-themed NFC hacker card: preem hardware, neon-trimmed, pocket-sized. Load custom payloads, skitter past access controls, and flash tricks for chooms on the wire. Slick, modular, and dangerously pretty.",
+      githubUrl: "https://github.com/NotARoomba/Cybercard",
+      imageSrc: "/images/cybercard.png",
+    },
+    {
+      name: "Linea",
+      url: "https://github.com/NotARoomba/Linea",
+      description:
+        "Project files for a custom EMR tablet from scratch. Inspired by Project Patchouli. Features a custom PCB with a STM32WB55 microcontroller, LiPo battery support, and a large (170x110mm) drawing area.",
+      githubUrl: "https://github.com/NotARoomba/Linea",
+      imageSrc: "/images/linea.png",
+    },
+    {
+      name: "Luma",
+      url: "https://github.com/NotARoomba/Luma",
+      description:
+        "A Minecraft inspired lantern with bluetooth! Control the color and brightness of the lantern using a mobile app. Features an ESP32 microcontroller, RGB LED strip, and a 3D printed enclosure.",
+      githubUrl: "https://github.com/NotARoomba/Luma",
+      imageSrc: "/images/luma.png",
+    },
+    {
+      name: "Smooth Talking",
+      url: "https://smoothtalking.notaroomba.dev",
+      description:
+        "An AI-Powered Dinosaur Debate Game. Debate with AI dinosaurs to earn coins. Each dinosaur has unique personalities, likes, and dislikes. Earn coins by triggering conversation rules while avoiding topics that might end the game!",
+      githubUrl: "https://github.com/NotARoomba/SmoothTalking",
+      imageSrc: "/images/smoothtalking.png",
+    },
+    {
+      name: "Mangrov",
+      url: "https://mangrov.notaroomba.dev",
+      description:
+        "Mangrov is a sustainable shopping platform that connects eco-conscious consumers with personalized, AI-powered product recommendations. Built with React, TypeScript, and Firebase, it offers features like community trading, real-time messaging, interactive product cards, and dark mode.",
+      githubUrl: "https://github.com/NotARoomba/Mangrov",
+      imageSrc: "/images/mangrov.png",
+    },
+    {
       name: "Niveles De Niveles",
       url: "https://nivelesdeniveles.org",
       description:

@@ -3,9 +3,18 @@ import SideBar from "./components/SideBar";
 import { motion } from "framer-motion";
 import TechBox from "./components/TechBox";
 import ProjectsSection from "./components/ProjectSection";
+import AudioPlayer from "./components/AudioPlayer";
 
 export default function App() {
   const technologies = [
+    {
+      name: "kicad",
+      src: "https://raw.githubusercontent.com/KiCad/kicad-source-mirror/refs/heads/master/resources/bitmaps_png/icons/icon_kicad.png",
+    },
+    {
+      name: "easyeda",
+      src: "https://easyeda.com/images/easyeda-thumbnail.png",
+    },
     {
       name: "typescript",
       src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
@@ -99,9 +108,29 @@ export default function App() {
             <div className="flex flex-col my-auto px-3">
               <p className="text-2xl md:text-3xl font-normal">hey there, im</p>
               <p className="text-5xl md:text-8xl font-extrabold">NotARoomba</p>
-              <p className="text-xl md:text-xl font-normal">
-                a full-stack developer who does a bit of everything
+              <p className="text-xl md:text-xl font-normal relative">
+                a full-stack developer/hardware magician who does a bit of
               </p>
+              <div className="w-full flex justify-center md:justify-start h-fit">
+                <div className="relative text-xl md:text-xl font-normal">
+                  <span className="absolute -left-[2px] top-0 text-[#01204E]">
+                    everything
+                  </span>
+                  <span className="absolute -left-[1px] top-0 text-[#028393]">
+                    everything
+                  </span>
+                  <span className="absolute left-0 top-0 text-[#F6DCAC]">
+                    everything
+                  </span>
+                  <span className="absolute left-[1px] top-0 text-[#FAAA68]">
+                    everything
+                  </span>
+                  <span className="absolute left-[2px] top-0 text-[#F65625]">
+                    everything
+                  </span>
+                  <span className="invisible">everything</span>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -117,10 +146,26 @@ export default function App() {
             </h2>
             <p className="font-medium text-base md:text-lg lg:text-xl">
               current high school senior. im into full-stack development,
-              embedded programming, and pcb design. i am an avid
-              musician/composer where i play piano, cello and drums. in my free
-              time i usually read, listen to music, or create obscenities with
-              code.
+              embedded programming, and{" "}
+              <span className="font-bold text-argentinian_blue">
+                hardware design
+              </span>
+              . i am an avid{" "}
+              <span className="font-bold text-[#f1c40f]">
+                musician/composer
+              </span>{" "}
+              (of the songs at the bottom right) where i play piano, cello and
+              drums. in my free time i usually read, listen to music, or create
+              obscenities with code. currently leading{" "}
+              <a
+                href="https://icarusclub.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#ec3750] underline"
+              >
+                icarus club
+              </a>
+              .
             </p>
           </div>
 
@@ -270,6 +315,7 @@ export default function App() {
           </div>
         </section>
       </div>
+      <AudioPlayer />
       <footer className="text-center w-full text-neutral-500 text-sm p-4 absolute bottom-0 left-1/2 -translate-x-1/2">
         &copy; 2025 Nathan Alspaugh
       </footer>
