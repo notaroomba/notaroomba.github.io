@@ -15,7 +15,7 @@ export default function ProjectsSection() {
       name: "Simple Flight Controller",
       url: "/simpleflightcontroller",
       description:
-        "A comprehensive guide on building a flight controller from scratch for rockets!",
+        "A comprehensive guide on building a flight controller from scratch for rockets, made for Hack Club's Blueprint program! Features an STM32F7 microcontroller, IMU, barometer, dual servo outputs for TVC/fin control, 2-cell LiPo charging, and microSD storage.",
       githubUrl: "https://github.com/NotARoomba/simpleflightcontroller",
       imageSrc: "/images/sfc.png",
     },
