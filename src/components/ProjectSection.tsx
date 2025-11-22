@@ -12,6 +12,14 @@ interface Project {
 export default function ProjectsSection() {
   const projects: Project[] = [
     {
+      name: "Simple Flight Controller",
+      url: "/simpleflightcontroller",
+      description:
+        "A comprehensive guide on building a flight controller from scratch for rockets!",
+      githubUrl: "https://github.com/NotARoomba/simpleflightcontroller",
+      imageSrc: "/images/sfc.png",
+    },
+    {
       name: "Athena",
       url: "https://github.com/NotARoomba/Athena",
       description:

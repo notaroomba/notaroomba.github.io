@@ -1,9 +1,9 @@
 import "react";
-import SideBar from "./components/SideBar";
+import SideBar from "../components/SideBar";
 import { motion } from "framer-motion";
-import TechBox from "./components/TechBox";
-import ProjectsSection from "./components/ProjectSection";
-import AudioPlayer from "./components/AudioPlayer";
+import TechBox from "../components/TechBox";
+import ProjectsSection from "../components/ProjectSection";
+import AudioPlayer from "../components/AudioPlayer";
 
 export default function App() {
   const technologies = [
@@ -238,12 +238,12 @@ export default function App() {
         {/* Contact Section */}
         <section
           id="contact"
-          className="flex h-screen relative px-4 md:px-8 pt-8 md:pt-14 w-full"
+          className="flex min-h-screen relative px-4 md:px-8 pt-8 md:pt-14 w-full"
         >
           <p className="absolute text-6xl lg:text-8xl font-extrabold">
             contact
           </p>
-          <div className="flex flex-col gap-12 m-auto md:mx-0 md:mt-64">
+          <div className="flex flex-col gap-12 m-auto md:mx-0 md:my-auto">
             <a
               href="https://github.com/notaroomba"
               target="_blank"
