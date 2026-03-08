@@ -145,8 +145,34 @@ export default function App() {
               about me
             </h2>
             <p className="font-medium text-base md:text-lg lg:text-xl">
-              current high school senior. im into full-stack development,
-              embedded programming, and{" "}
+              prospective{" "}
+              <a
+                href="https://mit.edu"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#750014] underline"
+              >
+                mit '30
+              </a>{" "}
+              student, currently taking a gap year @{" "}
+              <a
+                href="https://hackclub.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#ec3750] underline"
+              >
+                hack club
+              </a>
+              . previously led{" "}
+              <a
+                href="https://icarusclub.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#f1c40f] underline"
+              >
+                icarus club
+              </a>
+              . im into full-stack development, embedded programming, and{" "}
               <span className="font-bold text-argentinian_blue">
                 hardware design
               </span>
@@ -155,17 +181,16 @@ export default function App() {
                 musician/composer
               </span>{" "}
               (of the songs at the bottom right) where i play piano, cello and
-              drums. in my free time i usually read, listen to music, or create
-              obscenities with code. currently leading{" "}
-              <a
-                href="https://icarusclub.org"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-bold text-[#ec3750] underline"
+              drums. in my free time i usually read, listen to music, or create{" "}
+              <span
+                className="font-bold"
+                style={{
+                  color: `hsl(${Math.random() * 360}, 80%, 60%)`,
+                }}
               >
-                icarus club
-              </a>
-              .
+                obscenities
+              </span>{" "}
+              with code.
             </p>
           </div>
 

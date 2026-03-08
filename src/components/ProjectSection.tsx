@@ -12,6 +12,30 @@ interface Project {
 export default function ProjectsSection() {
   const projects: Project[] = [
     {
+      name: "Ember",
+      url: "https://github.com/NotARoomba/Ember",
+      description:
+        "A high-performance USB-C powered reflow hotplate with Bluetooth connectivity and intelligent temperature control! Features a custom PCB designed in KiCad with an STM32 microcontroller, a precision-machined heatbed, and a 3D printed case designed in Onshape.",
+      githubUrl: "https://github.com/NotARoomba/Ember",
+      imageSrc: "/images/ember.png",
+    },
+    {
+      name: "Cyberboard",
+      url: "https://github.com/NotARoomba/Cyberboard",
+      description:
+        "A Cyberpunk-themed Raspberry Pi Pico-sized STM32 development board with Bluetooth and battery support! It features an STM32WB55, BQ24074 battery charger, USB-C port, and SWD programming/debugging interface. Perfect for low-power and wireless applications. V2 comes with an IMU and a barometer for even more project possibilities!",
+      githubUrl: "https://github.com/NotARoomba/Cyberboard",
+      imageSrc: "/images/cyberboard.png",
+    },
+    {
+      name: "Trace",
+      url: "https://github.com/NotARoomba/Trace",
+      description:
+        "A comprehensive 310mm x 35mm PCB ruler with imperial and metric measurements, AWG gauge for wire sizing, trace thickness reference, protractor with 5° and 10° angle markings, common component footprints (resistors, capacitors, inductors, diodes, ICs), MOSFET channel type reference, useful conversions on the back, and an NFC tag for storing owner info and formulas.",
+      githubUrl: "https://github.com/NotARoomba/Trace",
+      imageSrc: "/images/trace.png",
+    },
+    {
       name: "Simple Flight Controller",
       url: "/simpleflightcontroller",
       description:
@@ -26,14 +50,6 @@ export default function ProjectsSection() {
         "Athena is a high-performance flight computer designed for advanced rocketry applications. The board features a sophisticated 6-layer PCB design with dedicated power planes and optimized signal routing.",
       githubUrl: "https://github.com/NotARoomba/Athena",
       imageSrc: "/images/athena.png",
-    },
-    {
-      name: "Cyberboard",
-      url: "https://github.com/NotARoomba/Cyberboard",
-      description:
-        "A Cyberpunk-themed Raspberry Pi Pico-sized STM32 development board with Bluetooth and battery support! It features an STM32WB55, BQ24074 battery charger, USB-C port, and SWD programming/debugging interface. Perfect for low-power and wireless applications.",
-      githubUrl: "https://github.com/NotARoomba/Cyberboard",
-      imageSrc: "/images/cyberboard.png",
     },
     {
       name: "Cybercard",
