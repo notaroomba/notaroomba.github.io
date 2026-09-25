@@ -149,7 +149,7 @@ export default function App() {
                 href="https://mit.edu"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-bold text-[#750014] underline"
+                className="font-bold text-[#ff1423] underline"
               >
                 mit '30
               </a>{" "}
