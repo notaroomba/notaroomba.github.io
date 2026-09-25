@@ -145,7 +145,6 @@ export default function App() {
               about me
             </h2>
             <p className="font-medium text-base md:text-lg lg:text-xl">
-              prospective{" "}
               <a
                 href="https://mit.edu"
                 target="_blank"
@@ -154,7 +153,7 @@ export default function App() {
               >
                 mit '30
               </a>{" "}
-              student, currently taking a gap year @{" "}
+              student. previously took a gap year to work @{" "}
               <a
                 href="https://hackclub.com"
                 target="_blank"
@@ -163,7 +162,7 @@ export default function App() {
               >
                 hack club
               </a>
-              . previously led{" "}
+              . before that, i led{" "}
               <a
                 href="https://icarusclub.org"
                 target="_blank"
