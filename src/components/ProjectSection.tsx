@@ -12,12 +12,28 @@ interface Project {
 export default function ProjectsSection() {
   const projects: Project[] = [
     {
+      name: "Keybytes",
+      url: "https://github.com/NotARoomba/keybytes",
+      description:
+        "A truly modular keyboard with rearrangeable keys, magnetic cases and Bluetooth! Every key is its own 1u PCB with a CH32V003 RISC-V microcontroller and pogo pins on all 4 sides, all talking to an STM32WB55 main board with USB-C and LiPo charging.",
+      githubUrl: "https://github.com/NotARoomba/keybytes",
+      imageSrc: "/images/keybytes.jpg",
+    },
+    {
+      name: "Ledify",
+      url: "https://github.com/NotARoomba/ledify",
+      description:
+        "A super small addressable LED controller with USB-C PD up to 100W, a switchable 5V/12V output and Bluetooth! Features an ESP32-C6, a 10A buck converter, an IMU, a barometer, an ambient light sensor and an I2S microphone for sound-reactive effects, all on a 4-layer PCB.",
+      githubUrl: "https://github.com/NotARoomba/ledify",
+      imageSrc: "/images/ledify.jpg",
+    },
+    {
       name: "Ember",
       url: "https://github.com/NotARoomba/Ember",
       description:
         "A high-performance USB-C powered reflow hotplate with Bluetooth connectivity and intelligent temperature control! Features a custom PCB designed in KiCad with an STM32 microcontroller, a precision-machined heatbed, and a 3D printed case designed in Onshape.",
       githubUrl: "https://github.com/NotARoomba/Ember",
-      imageSrc: "/images/ember.png",
+      imageSrc: "/images/ember.jpg",
     },
     {
       name: "Cyberboard",
@@ -25,7 +41,7 @@ export default function ProjectsSection() {
       description:
         "A Cyberpunk-themed Raspberry Pi Pico-sized STM32 development board with Bluetooth and battery support! It features an STM32WB55, BQ24074 battery charger, USB-C port, and SWD programming/debugging interface. Perfect for low-power and wireless applications. V2 comes with an IMU and a barometer for even more project possibilities!",
       githubUrl: "https://github.com/NotARoomba/Cyberboard",
-      imageSrc: "/images/cyberboard.png",
+      imageSrc: "/images/cyberboard.jpg",
     },
     {
       name: "Trace",
@@ -33,7 +49,7 @@ export default function ProjectsSection() {
       description:
         "A comprehensive 310mm x 35mm PCB ruler with imperial and metric measurements, AWG gauge for wire sizing, trace thickness reference, protractor with 5° and 10° angle markings, common component footprints (resistors, capacitors, inductors, diodes, ICs), MOSFET channel type reference, useful conversions on the back, and an NFC tag for storing owner info and formulas.",
       githubUrl: "https://github.com/NotARoomba/Trace",
-      imageSrc: "/images/trace.png",
+      imageSrc: "/images/trace.jpg",
     },
     {
       name: "Simple Flight Controller",
@@ -49,7 +65,7 @@ export default function ProjectsSection() {
       description:
         "Athena is a high-performance flight computer designed for advanced rocketry applications. The board features a sophisticated 6-layer PCB design with dedicated power planes and optimized signal routing.",
       githubUrl: "https://github.com/NotARoomba/Athena",
-      imageSrc: "/images/athena.png",
+      imageSrc: "/images/athena.jpg",
     },
     {
       name: "Cybercard",
@@ -57,7 +73,7 @@ export default function ProjectsSection() {
       description:
         "A Cyberpunk-themed NFC hacker card: preem hardware, neon-trimmed, pocket-sized. Load custom payloads, skitter past access controls, and flash tricks for chooms on the wire. Slick, modular, and dangerously pretty.",
       githubUrl: "https://github.com/NotARoomba/Cybercard",
-      imageSrc: "/images/cybercard.png",
+      imageSrc: "/images/cybercard.jpg",
     },
     {
       name: "Linea",
@@ -65,7 +81,7 @@ export default function ProjectsSection() {
       description:
         "Project files for a custom EMR tablet from scratch. Inspired by Project Patchouli. Features a custom PCB with a STM32WB55 microcontroller, LiPo battery support, and a large (170x110mm) drawing area.",
       githubUrl: "https://github.com/NotARoomba/Linea",
-      imageSrc: "/images/linea.png",
+      imageSrc: "/images/linea.jpg",
     },
     {
       name: "Luma",
@@ -73,7 +89,7 @@ export default function ProjectsSection() {
       description:
         "A Minecraft inspired lantern with bluetooth! Control the color and brightness of the lantern using a mobile app. Features an ESP32 microcontroller, RGB LED strip, and a 3D printed enclosure.",
       githubUrl: "https://github.com/NotARoomba/Luma",
-      imageSrc: "/images/luma.png",
+      imageSrc: "/images/luma.jpg",
     },
     {
       name: "Smooth Talking",
