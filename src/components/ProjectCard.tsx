@@ -31,7 +31,7 @@ export default function ProjectCard({
   return (
     <motion.div //0 139 245 / 0.2
       key={name}
-      className="bg-neutral-900 h-fit rounded-xl overflow-hidden w-full max-w-sm mx-auto ring-2 ring-transparent hover:ring-argentinian_blue-400 transition-shadow duration-300"
+      className="bg-neutral-900 h-fit rounded-xl overflow-hidden w-full max-w-sm mx-auto ring-4 ring-transparent hover:ring-argentinian_blue-400 transition-shadow duration-300"
       initial="hidden"
       whileInView="visible"
       variants={card}
