@@ -150,11 +150,11 @@ export default function App() {
             ))}
           </div>
         </section>
+        <footer className="text-center text-neutral-500 text-sm p-4 mb-36 md:mb-0">
+          &copy; {new Date().getFullYear()} Nathan Alspaugh
+        </footer>
       </div>
       <AudioPlayer />
-      <footer className="text-center w-full text-neutral-500 text-sm p-4 absolute bottom-0 left-1/2 -translate-x-1/2">
-        &copy; 2025 Nathan Alspaugh
-      </footer>
     </div>
   );
 }

@@ -84,7 +84,7 @@ export default function SimpleFlightController() {
         </Markdown>
       </div>
       <footer className="text-center w-full text-neutral-500 text-sm p-4 absolute bottom-0 left-1/2 -translate-x-1/2">
-        &copy; 2025 Nathan Alspaugh
+        &copy; {new Date().getFullYear()} Nathan Alspaugh
       </footer>
     </div>
   );
