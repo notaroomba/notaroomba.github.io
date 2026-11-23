@@ -9,26 +9,27 @@ export interface Photo {
 
 export const photos = gallery as Photo[];
 
-// Tile size from the photo's shape: tall, wide or square, with a few promoted
-// to large tiles so the mosaic doesn't look like a plain grid.
-function tile(p: Photo, i: number) {
-  const r = p.w / p.h;
-  const big = i % 7 === 0;
-  if (r < 0.85) return big ? "col-span-2 row-span-4" : "col-span-1 row-span-2";
-  if (r > 1.25) return big ? "col-span-4 row-span-2" : "col-span-2 row-span-1";
-  return big ? "col-span-2 row-span-2" : "col-span-1 row-span-1";
+// Square tiles, with a few 2x2 ones. The number of big tiles is picked so the
+// total cell count is a multiple of 8 (and 4), so the grid ends in a flat row.
+const big = new Set<number>();
+{
+  const n = photos.length;
+  let k = 0;
+  while ((n + 3 * k) % 8 !== 0) k++;
+  // offsets zig-zag the big tiles across the 8 columns instead of stacking them on the left
+  for (let i = 0; i < k; i++) big.add(Math.min(n - 1, Math.floor((i * n) / k) + [0, 6, 2, 4][i % 4]));
 }
 
 export function PhotoCell({ p, className = "" }: { p: Photo; className?: string }) {
   return (
-    <div className={`group overflow-hidden rounded-md bg-white/5 ${className}`}>
+    <div className={`group relative overflow-hidden rounded-md bg-white/5 ${className}`}>
       <img
         src={p.src}
         alt={p.alt}
         title={p.alt}
         loading="lazy"
         decoding="async"
-        className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-[1.03] transition-[filter,transform] duration-500"
+        className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-[1.03] transition-[filter,transform] duration-500"
       />
     </div>
   );
@@ -36,9 +37,9 @@ export function PhotoCell({ p, className = "" }: { p: Photo; className?: string 
 
 export default function Gallery() {
   return (
-    <div className="grid grid-cols-4 md:grid-cols-8 auto-rows-[90px] md:auto-rows-[140px] grid-flow-dense gap-2">
+    <div className="grid grid-cols-4 md:grid-cols-8 grid-flow-dense gap-2">
       {photos.map((p, i) => (
-        <PhotoCell key={p.src} p={p} className={tile(p, i)} />
+        <PhotoCell key={p.src} p={p} className={big.has(i) ? "col-span-2 row-span-2 aspect-square" : "aspect-square"} />
       ))}
     </div>
   );
