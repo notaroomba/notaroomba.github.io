@@ -142,8 +142,9 @@ export default function App() {
                 style={{ "--brand": color } as React.CSSProperties}
               >
                 <Icon size={48} className="shrink-0 transition-colors group-hover:[color:var(--brand)]" />
-                <span className="font-bold underline underline-offset-8 decoration-4 decoration-transparent group-hover:[text-decoration-color:var(--brand)] transition-colors">
+                <span className="font-bold">
                   {label}
+                  <span className="block h-1 bg-[var(--brand)] max-w-0 group-hover:max-w-full transition-all duration-500"></span>
                 </span>
               </a>
             ))}
