@@ -24,12 +24,6 @@
     "h": 853
   },
   {
-    "src": "/images/gallery/nathan-alspaugh-005.jpg",
-    "alt": "Athena v1 flight computer, Nathan Alspaugh",
-    "w": 900,
-    "h": 1600
-  },
-  {
     "src": "/images/gallery/nathan-alspaugh-007.jpg",
     "alt": "Ember v1 hotplate in hand, Nathan Alspaugh",
     "w": 1600,
@@ -56,6 +50,12 @@
   {
     "src": "/images/gallery/nathan-alspaugh-010.jpg",
     "alt": "brick building at night in the snow, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-005.jpg",
+    "alt": "Athena v1 flight computer, Nathan Alspaugh",
     "w": 900,
     "h": 1600
   },
