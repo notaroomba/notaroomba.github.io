@@ -3,7 +3,8 @@ import SideBar from "../components/SideBar";
 import ProjectsSection from "../components/ProjectSection";
 import AudioPlayer from "../components/AudioPlayer";
 import Gallery from "../components/Gallery";
-import { Github, Linkedin, Youtube, Instagram, Mail } from "lucide-react";
+import { Mail } from "lucide-react";
+import { Github, Linkedin, Youtube, Instagram } from "../components/BrandIcons";
 
 const SOCIALS = [
   { label: "github", href: "https://github.com/notaroomba", Icon: Github, color: "#6e5494" },
