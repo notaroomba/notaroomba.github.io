@@ -5,6 +5,14 @@ import AudioPlayer from "../components/AudioPlayer";
 import Gallery from "../components/Gallery";
 import { Github, Linkedin, Youtube, Instagram, Mail } from "lucide-react";
 
+const SOCIALS = [
+  { label: "github", href: "https://github.com/notaroomba", Icon: Github, color: "#6e5494" },
+  { label: "linkedin", href: "https://linkedin.com/in/notaroomba", Icon: Linkedin, color: "#0a66c2" },
+  { label: "youtube", href: "https://youtube.com/@notaroomba", Icon: Youtube, color: "#ff0000" },
+  { label: "instagram", href: "https://instagram.com/notaroomba", Icon: Instagram, color: "#e1306c" },
+  { label: "ndal@mit.edu", href: "mailto:ndal@mit.edu", Icon: Mail, color: "#a31f34" },
+];
+
 export default function App() {
   return (
     <div className="flex bg-black text-white_smoke overflow-x-hidden relative">
@@ -38,6 +46,22 @@ export default function App() {
                 </span>
                 .
               </p>
+              <div className="mt-6 flex flex-wrap gap-4 justify-center md:justify-start text-white_smoke/70">
+                {SOCIALS.map(({ label, href, Icon, color }) => (
+                  <a
+                    key={label}
+                    href={href}
+                    aria-label={label}
+                    title={label}
+                    {...(href.startsWith("http") ? { target: "_blank", rel: "me noopener noreferrer" } : {})}
+                    className="flex items-center gap-2 transition-colors hover:[color:var(--brand)]"
+                    style={{ "--brand": color } as React.CSSProperties}
+                  >
+                    <Icon size={24} />
+                    {href.startsWith("mailto:") && <span className="text-base">{label}</span>}
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </section>
@@ -127,13 +151,7 @@ export default function App() {
         >
           <h2 className="font-extrabold text-5xl lg:text-8xl mb-10">contact</h2>
           <div className="flex flex-col gap-6">
-            {[
-              { label: "github", href: "https://github.com/notaroomba", Icon: Github, color: "#6e5494" },
-              { label: "linkedin", href: "https://linkedin.com/in/notaroomba", Icon: Linkedin, color: "#0a66c2" },
-              { label: "youtube", href: "https://youtube.com/@notaroomba", Icon: Youtube, color: "#ff0000" },
-              { label: "instagram", href: "https://instagram.com/notaroomba", Icon: Instagram, color: "#e1306c" },
-              { label: "ndal@mit.edu", href: "mailto:ndal@mit.edu", Icon: Mail, color: "#ff1423" },
-            ].map(({ label, href, Icon, color }) => (
+            {SOCIALS.map(({ label, href, Icon, color }) => (
               <a
                 key={label}
                 href={href}
