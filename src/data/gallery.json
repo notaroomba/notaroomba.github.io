@@ -24,12 +24,6 @@
     "h": 675
   },
   {
-    "src": "/images/gallery/nathan-alspaugh-042.jpg",
-    "alt": "electronics workshop from above, Nathan Alspaugh",
-    "w": 900,
-    "h": 1600
-  },
-  {
     "src": "/images/gallery/nathan-alspaugh-053.jpg",
     "alt": "PCB under a microscope, Nathan Alspaugh",
     "w": 900,
@@ -52,6 +46,12 @@
     "alt": "friends at an event, Nathan Alspaugh",
     "w": 1280,
     "h": 960
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-042.jpg",
+    "alt": "electronics workshop from above, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
   },
   {
     "src": "/images/gallery/nathan-alspaugh-002.jpg",
