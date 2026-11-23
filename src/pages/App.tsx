@@ -3,7 +3,7 @@ import SideBar from "../components/SideBar";
 import ProjectsSection from "../components/ProjectSection";
 import AudioPlayer from "../components/AudioPlayer";
 import Gallery from "../components/Gallery";
-import { Github, Linkedin, Youtube, Instagram } from "lucide-react";
+import { Github, Linkedin, Youtube, Instagram, Mail } from "lucide-react";
 
 export default function App() {
   return (
@@ -132,12 +132,12 @@ export default function App() {
               { label: "linkedin", href: "https://linkedin.com/in/notaroomba", Icon: Linkedin, color: "#0a66c2" },
               { label: "youtube", href: "https://youtube.com/@notaroomba", Icon: Youtube, color: "#ff0000" },
               { label: "instagram", href: "https://instagram.com/notaroomba", Icon: Instagram, color: "#e1306c" },
+              { label: "ndal@mit.edu", href: "mailto:ndal@mit.edu", Icon: Mail, color: "#ff1423" },
             ].map(({ label, href, Icon, color }) => (
               <a
                 key={label}
                 href={href}
-                target="_blank"
-                rel="me noopener noreferrer"
+                {...(href.startsWith("http") ? { target: "_blank", rel: "me noopener noreferrer" } : {})}
                 className="group flex items-center gap-4 md:gap-6 text-4xl md:text-5xl w-fit"
                 style={{ "--brand": color } as React.CSSProperties}
               >
