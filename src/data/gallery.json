@@ -1,86 +1,200 @@
 [
   {
-    "src": "/images/blog/keybytes/keybytes-v1-working.jpg",
-    "alt": "Keybytes, a modular keyboard by Nathan Alspaugh",
+    "src": "/images/gallery/nathan-alspaugh-001.jpg",
+    "alt": "childhood photo building a wooden box, Nathan Alspaugh",
+    "w": 720,
+    "h": 960
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-002.jpg",
+    "alt": "friends in a kitchen, Nathan Alspaugh",
+    "w": 1280,
+    "h": 853
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-003.jpg",
+    "alt": "friends dressed up at a formal, Nathan Alspaugh",
     "w": 1600,
-    "h": 900,
-    "placeholder": true
+    "h": 1200
   },
   {
-    "src": "/images/blog/ledify/ledify-first-light.jpg",
-    "alt": "Ledify LED controller lighting up its first strip",
-    "w": 675,
-    "h": 1200,
-    "placeholder": true
-  },
-  {
-    "src": "/images/blog/trace/trace-built.jpg",
-    "alt": "Trace PCB ruler by Nathan Alspaugh",
-    "w": 1600,
-    "h": 752,
-    "placeholder": true
-  },
-  {
-    "src": "/images/blog/cyberboard/cyberboard-v2-built.jpg",
-    "alt": "Cyberboard v2 dev board",
-    "w": 1200,
-    "h": 674,
-    "placeholder": true
-  },
-  {
-    "src": "/images/blog/ember/ember-built.jpg",
-    "alt": "Ember reflow hotplate by Nathan Alspaugh",
+    "src": "/images/gallery/nathan-alspaugh-004.jpg",
+    "alt": "Ember v1 PCB, Nathan Alspaugh",
     "w": 900,
-    "h": 900,
-    "placeholder": true
+    "h": 1600
   },
   {
-    "src": "/images/ledify.jpg",
-    "alt": "Ledify board",
-    "w": 1200,
-    "h": 1200,
-    "placeholder": true
+    "src": "/images/gallery/nathan-alspaugh-005.jpg",
+    "alt": "Athena v1 flight computer, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
   },
   {
-    "src": "/images/athena.jpg",
-    "alt": "Athena",
-    "w": 675,
-    "h": 1200,
-    "placeholder": true
-  },
-  {
-    "src": "/images/linea.jpg",
-    "alt": "Linea",
-    "w": 675,
-    "h": 1200,
-    "placeholder": true
-  },
-  {
-    "src": "/images/luma.jpg",
-    "alt": "Luma",
-    "w": 675,
-    "h": 1200,
-    "placeholder": true
-  },
-  {
-    "src": "/images/cybercard.jpg",
-    "alt": "Cybercard",
-    "w": 675,
-    "h": 1200,
-    "placeholder": true
-  },
-  {
-    "src": "/images/sfc.png",
-    "alt": "Simple flight controller render",
-    "w": 512,
-    "h": 512,
-    "placeholder": true
-  },
-  {
-    "src": "/images/blog/keybytes/keybytes-keybit-v2-render.jpg",
-    "alt": "Keybit v2 render",
+    "src": "/images/gallery/nathan-alspaugh-006.jpg",
+    "alt": "lying on a floor of cards with friends, Nathan Alspaugh",
     "w": 1600,
-    "h": 900,
-    "placeholder": true
+    "h": 1200
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-007.jpg",
+    "alt": "Ember v1 hotplate in hand, Nathan Alspaugh",
+    "w": 1600,
+    "h": 900
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-008.jpg",
+    "alt": "team photo on stage at a robotics event, Nathan Alspaugh",
+    "w": 1600,
+    "h": 900
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-009.jpg",
+    "alt": "jellyfish sculpture in a glass atrium, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-010.jpg",
+    "alt": "brick building at night in the snow, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-011.jpg",
+    "alt": "snowy park, Nathan Alspaugh",
+    "w": 1600,
+    "h": 900
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-012.jpg",
+    "alt": "street food at a market, Nathan Alspaugh",
+    "w": 1200,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-013.jpg",
+    "alt": "friends at a party, Nathan Alspaugh",
+    "w": 1600,
+    "h": 1200
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-014.jpg",
+    "alt": "soldering bench with a laptop, Nathan Alspaugh",
+    "w": 1600,
+    "h": 900
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-015.jpg",
+    "alt": "Cyberboard v2 dev board, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-016.jpg",
+    "alt": "city street at night, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-017.jpg",
+    "alt": "vintage oscilloscope, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-018.jpg",
+    "alt": "cooking with friends, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-019.jpg",
+    "alt": "tower of old electronics, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-020.jpg",
+    "alt": "torching crème brûlée, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-021.jpg",
+    "alt": "Shenzhen street sign, Nathan Alspaugh",
+    "w": 908,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-022.jpg",
+    "alt": "glass skyscrapers, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-023.jpg",
+    "alt": "arched hallway, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-024.jpg",
+    "alt": "friends in front of a fountain, Nathan Alspaugh",
+    "w": 1600,
+    "h": 900
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-025.jpg",
+    "alt": "portrait in a white shirt, Nathan Alspaugh",
+    "w": 1600,
+    "h": 1067
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-026.jpg",
+    "alt": "lantern in the dark, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-027.jpg",
+    "alt": "Cybercard NFC business cards, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-028.jpg",
+    "alt": "a PCB next to its layout on a laptop, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-029.jpg",
+    "alt": "talk on how to make rocket propellant, Nathan Alspaugh",
+    "w": 1600,
+    "h": 1067
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-030.jpg",
+    "alt": "rocket propellant talk in a lecture hall, Nathan Alspaugh",
+    "w": 1600,
+    "h": 1067
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-031.jpg",
+    "alt": "friends at an event, Nathan Alspaugh",
+    "w": 1280,
+    "h": 960
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-032.jpg",
+    "alt": "band playing on stage, Nathan Alspaugh",
+    "w": 1600,
+    "h": 900
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-033.jpg",
+    "alt": "portrait in an apron holding a mug, Nathan Alspaugh",
+    "w": 1280,
+    "h": 853
   }
 ]
