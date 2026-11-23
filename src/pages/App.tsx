@@ -11,39 +11,44 @@ export default function App() {
       <SideBar />
       <div className="flex md:ml-72 ml-0 flex-col w-full mb-4 h-fit relative [&>section]:relative [&>section]:z-10">
         <PhotoField />
-        <section id="home" className="h-screen flex p-4">
+        <section id="home" className="min-h-screen flex p-4 pb-28 md:pb-4">
           <div className="m-auto flex flex-col md:flex-row justify-center items-center text-center md:text-left">
             <img
-              src="/images/avatar.png"
-              alt="NotARoomba (Nathan Alspaugh) avatar"
-              className="w-1/2 my-4 md:my-auto"
+              src="/images/nathan-alspaugh-square.jpg"
+              alt="Nathan Alspaugh (NotARoomba)"
+              width={800}
+              height={800}
+              fetchPriority="high"
+              className="w-1/2 md:w-[22rem] xl:w-[26rem] aspect-square rounded-full object-cover my-4 md:my-auto md:mr-12 shadow-2xl shadow-black ring-1 ring-white/10"
             />
-            <div className="flex flex-col my-auto px-3">
-              <p className="text-2xl md:text-3xl font-normal">hey there, im</p>
-              <h1 className="text-5xl md:text-8xl font-extrabold">NotARoomba</h1>
-              <p className="text-lg md:text-xl text-white_smoke/60 -mt-1 mb-1">nathan alspaugh</p>
-              <p className="text-xl md:text-xl font-normal relative">
-                a full-stack developer/hardware magician who does a bit of
+            <div className="flex flex-col my-auto px-3 items-center md:items-start max-w-2xl">
+              <p className="text-lg md:text-2xl font-normal text-white_smoke/70">hey there, i&apos;m</p>
+              <h1 className="text-5xl md:text-7xl xl:text-8xl font-extrabold tracking-tight leading-none mt-1">
+                NotARoomba
+              </h1>
+              <p className="mt-3 text-xs md:text-sm font-mono uppercase tracking-[0.15em] md:tracking-[0.2em] text-white_smoke/50">
+                nathan alspaugh · mit &apos;30 · ex hack club
               </p>
-              <div className="w-full flex justify-center md:justify-start h-fit">
-                <div className="relative text-xl md:text-xl font-normal">
-                  <span className="absolute -left-[2px] top-0 text-[#01204E]">
-                    everything
-                  </span>
-                  <span className="absolute -left-[1px] top-0 text-[#028393]">
-                    everything
-                  </span>
-                  <span className="absolute left-0 top-0 text-[#F6DCAC]">
-                    everything
-                  </span>
-                  <span className="absolute left-[1px] top-0 text-[#FAAA68]">
-                    everything
-                  </span>
-                  <span className="absolute left-[2px] top-0 text-[#F65625]">
-                    everything
-                  </span>
-                  <span className="invisible">everything</span>
-                </div>
+              <p className="mt-6 text-lg md:text-2xl font-normal leading-snug text-white_smoke/90">
+                full-stack developer and hardware magician who builds a bit of{" "}
+                <span className="font-bold bg-gradient-to-r from-[#2bb3c0] via-[#FAAA68] to-[#F65625] bg-clip-text text-transparent">
+                  everything
+                </span>
+                .
+              </p>
+              <div className="mt-8 flex flex-wrap gap-3 justify-center md:justify-start">
+                <a
+                  href="#projects"
+                  className="rounded-full bg-white_smoke text-black px-6 py-2.5 font-semibold hover:bg-white transition"
+                >
+                  see my projects
+                </a>
+                <a
+                  href="#contact"
+                  className="rounded-full border border-white/25 px-6 py-2.5 font-semibold hover:bg-white/10 transition"
+                >
+                  say hi
+                </a>
               </div>
             </div>
           </div>

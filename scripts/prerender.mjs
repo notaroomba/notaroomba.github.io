@@ -153,7 +153,7 @@ page({
 // ---- sitemap with images, robots
 const today = new Date().toISOString().slice(0, 10);
 const entries = [
-  { path: "/", lastmod: today, images: [{ src: "/images/avatar.png", alt: "Nathan Alspaugh" }, ...gallery] },
+  { path: "/", lastmod: today, images: [{ src: "/images/nathan-alspaugh.jpg", alt: "Nathan Alspaugh (NotARoomba)" }, ...gallery] },
   { path: "/simpleflightcontroller" },
 ];
 writeFileSync(

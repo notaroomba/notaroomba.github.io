@@ -69,7 +69,9 @@ export function PhotoField() {
       return {
         p,
         left: side ? 1 + Math.random() * 7 : 85 + Math.random() * 7,
-        top: 3 + (i / rest.length) * 94 + (Math.random() - 0.5) * 3,
+        // Right-hand photos start below the hero so they never sit behind the name.
+        f: side ? (i / rest.length) * 0.96 : 0.03 + (i / rest.length) * 0.94,
+        side,
         dx: (Math.random() - 0.5) * 60,
         dy: (Math.random() - 0.5) * 120,
         rot: (Math.random() - 0.5) * 20,
@@ -81,7 +83,7 @@ export function PhotoField() {
 
   return (
     <div className="hidden md:block absolute inset-0 overflow-hidden pointer-events-none z-0" aria-hidden="true">
-      {items.map(({ p, left, top, dx, dy, rot, drot, dur }) => (
+      {items.map(({ p, left, f, side, dx, dy, rot, drot, dur }) => (
         <motion.img
           key={p.src}
           src={p.src}
@@ -89,7 +91,7 @@ export function PhotoField() {
           loading="lazy"
           decoding="async"
           className="absolute w-24 lg:w-36 rounded-lg shadow-2xl shadow-black grayscale opacity-40"
-          style={{ left: `${left}%`, top: `${top}%` }}
+          style={{ left: `${left}%`, top: side ? `${f * 100}%` : `calc(100vh + ${f} * (100% - 100vh))` }}
           initial={{ rotate: rot }}
           animate={{ x: [0, dx, 0], y: [0, dy, 0], rotate: [rot, rot + drot, rot] }}
           transition={{ duration: dur, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" }}
