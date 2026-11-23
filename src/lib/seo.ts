@@ -24,7 +24,7 @@ export function useSeo(opts: {
 }) {
   const { title, description, path, image, jsonLd } = opts;
   useEffect(() => {
-    const url = SITE + path;
+    const url = SITE + (path.endsWith("/") ? path : path + "/");
     const img = image ? (image.startsWith("http") ? image : SITE + image) : undefined;
     document.title = title;
     setMeta("name", "description", description);

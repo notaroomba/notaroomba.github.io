@@ -77,10 +77,10 @@ export default function BlogPost() {
               );
             },
             img: ({ src, alt }) => (
-              <figure className="my-8">
+              <span className="block my-8">
                 <img src={src} alt={alt || ""} loading="lazy" decoding="async" className="w-full rounded-lg" />
-                {alt && <figcaption className="text-sm text-white_smoke/50 mt-2 text-center">{alt}</figcaption>}
-              </figure>
+                {alt && <span className="block text-sm text-white_smoke/50 mt-2 text-center">{alt}</span>}
+              </span>
             ),
             strong: ({ children }) => <strong className="font-bold text-white">{children}</strong>,
           }}

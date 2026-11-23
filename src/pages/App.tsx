@@ -14,12 +14,13 @@ export default function App() {
           <div className="m-auto flex flex-col md:flex-row justify-center items-center text-center md:text-left">
             <img
               src="/images/avatar.png"
-              alt="avatar"
+              alt="NotARoomba (Nathan Alspaugh) avatar"
               className="w-1/2 my-4 md:my-auto"
             />
             <div className="flex flex-col my-auto px-3">
               <p className="text-2xl md:text-3xl font-normal">hey there, im</p>
-              <p className="text-5xl md:text-8xl font-extrabold">NotARoomba</p>
+              <h1 className="text-5xl md:text-8xl font-extrabold">NotARoomba</h1>
+              <p className="text-lg md:text-xl text-white_smoke/60 -mt-1 mb-1">nathan alspaugh</p>
               <p className="text-xl md:text-xl font-normal relative">
                 a full-stack developer/hardware magician who does a bit of
               </p>

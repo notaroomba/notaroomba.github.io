@@ -1,14 +1,14 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./pages/App.tsx";
 import { createBrowserRouter, RouterProvider } from "react-router";
 
 import "../index.css";
-import SimpleFlightController from "./pages/SimpleFlightController.tsx";
+const SimpleFlightController = lazy(() => import("./pages/SimpleFlightController.tsx"));
 import ErrorPage from "./pages/ErrorPage.tsx";
-import Blog from "./pages/Blog.tsx";
-import BlogPost from "./pages/BlogPost.tsx";
-import GalleryPage from "./pages/GalleryPage.tsx";
+const Blog = lazy(() => import("./pages/Blog.tsx"));
+const BlogPost = lazy(() => import("./pages/BlogPost.tsx"));
+const GalleryPage = lazy(() => import("./pages/GalleryPage.tsx"));
 
 let router = createBrowserRouter([
   {
@@ -39,6 +39,8 @@ let router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Suspense fallback={<div className="min-h-screen bg-black" />}>
+      <RouterProvider router={router} />
+    </Suspense>
   </React.StrictMode>
 );

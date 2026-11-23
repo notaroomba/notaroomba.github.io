@@ -40,7 +40,7 @@ export default function ProjectCard({
       <div className="relative aspect-square w-full overflow-hidden">
         <img
           src={imageSrc || "/placeholder.svg"}
-          alt={`${name} project screenshot`}
+          alt={`${name}, a project by Nathan Alspaugh`}
           className="object-cover w-full h-full transform hover:scale-105 transition-transform duration-500"
           sizes="(max-width: 768px) 100vw, 300px"
         />

@@ -100,28 +100,12 @@ export default function ProjectsSection() {
       imageSrc: "/images/niveles.png",
     },
     {
-      name: "Velox",
-      url: "https://velox.notaroomba.dev",
-      description:
-        "Velox is an app designed to help improve your mental math skills through fun and engaging games. Built with Expo, Supabase, and TypeScript, it offers a variety of features including multiplayer mode, a global leaderboard, support for 8 languages, and dark/light mode. Whether you're a math enthusiast or just looking to sharpen your skills, Makinator provides a challenging and enjoyable experience.",
-      githubUrl: "https://github.com/NotARoomba/Velox", // Add GitHub URL if available
-      imageSrc: "/images/velox.png", // Add image path if available
-    },
-    {
       name: "Talos",
       url: "https://talos.notaroomba.dev",
       description:
         "Talos is an advanced flight monitoring system for model rockets, equipped with real-time telemetry and data logging capabilities. Designed for hobbyists and engineers, Talos provides detailed insights into flight performance, including altitude, velocity, and trajectory. Whether you're launching your first rocket or optimizing a high-performance model, Talos has you covered.",
       githubUrl: "https://github.com/NotARoomba/Talos", // Add GitHub URL if available
       imageSrc: "/images/talos.png", // Add image path if available
-    },
-    {
-      name: "RoombaOS",
-      url: "",
-      description:
-        "A test operating system to learn Assembly and low-level C. Planned features include porting Asteroids and WordleCLI, FAT filesystem, and more commands. You can try out RoombaOS by downloading the binary from the releases or look at the code to compile.",
-      githubUrl: "https://github.com/NotARoomba/RoombaOS",
-      imageSrc: "/images/roomba.png",
     },
   ];
 

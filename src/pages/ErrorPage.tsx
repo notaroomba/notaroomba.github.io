@@ -1,6 +1,15 @@
 import { ArrowLeft } from "lucide-react";
+import { useEffect } from "react";
 
 export default function ErrorPage() {
+  useEffect(() => {
+    document.title = "not found | Nathan Alspaugh";
+    const m = document.createElement("meta");
+    m.name = "robots";
+    m.content = "noindex";
+    document.head.appendChild(m);
+    return () => m.remove();
+  }, []);
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden relative flex items-center justify-center">
       {/* Floating Home Button */}
