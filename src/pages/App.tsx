@@ -126,7 +126,7 @@ export default function App() {
           className="min-h-screen relative px-4 md:px-8 py-16 w-full flex flex-col justify-center"
         >
           <h2 className="font-extrabold text-5xl lg:text-8xl mb-10">contact</h2>
-          <div className="flex flex-col gap-10">
+          <div className="flex flex-col gap-6">
             {[
               { label: "github", href: "https://github.com/notaroomba", Icon: Github, color: "#6e5494" },
               { label: "linkedin", href: "https://linkedin.com/in/notaroomba", Icon: Linkedin, color: "#0a66c2" },
@@ -138,10 +138,10 @@ export default function App() {
                 key={label}
                 href={href}
                 {...(href.startsWith("http") ? { target: "_blank", rel: "me noopener noreferrer" } : {})}
-                className="group flex items-center gap-4 md:gap-6 text-4xl md:text-5xl w-fit"
+                className="group flex items-center gap-3 md:gap-4 text-2xl md:text-3xl w-fit"
                 style={{ "--brand": color } as React.CSSProperties}
               >
-                <Icon size={48} className="shrink-0 transition-colors group-hover:[color:var(--brand)]" />
+                <Icon size={32} className="shrink-0 transition-colors group-hover:[color:var(--brand)]" />
                 <span className="font-bold">
                   {label}
                   <span className="block h-1 bg-[var(--brand)] max-w-0 group-hover:max-w-full transition-all duration-500"></span>
