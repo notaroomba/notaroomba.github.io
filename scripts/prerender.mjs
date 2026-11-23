@@ -126,7 +126,7 @@ page({
   type: "profile",
   body: `${nav}
 <h1>Nathan Alspaugh (NotARoomba)</h1>
-<p>MIT '30 student. Previously took a gap year to work at Hack Club, before that led Icarus Club. I design PCBs and build hardware and software: modular keyboards, LED controllers, reflow hotplates, dev boards and flight computers.</p>
+<p>MIT '30 student. Previously took a gap year to work at Hack Club, where I ran Macondo, before that led Icarus Club. I design PCBs and build hardware and software: modular keyboards, LED controllers, reflow hotplates, dev boards and flight computers.</p>
 <h2>Projects</h2>
 <ul>${projects.map((p) => `<li><strong>${esc(p.name)}</strong>: ${esc(p.description)}</li>`).join("")}</ul>
 <h2>Photos</h2>

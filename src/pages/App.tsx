@@ -94,6 +94,15 @@ export default function App() {
               >
                 hack club
               </a>
+              , where i ran{" "}
+              <a
+                href="https://macondo.hackclub.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-bold text-[#ecd2ae] underline"
+              >
+                macondo
+              </a>
               . before that, i led{" "}
               <a
                 href="https://icarusclub.org"
