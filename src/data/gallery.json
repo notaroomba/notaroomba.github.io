@@ -1,9 +1,9 @@
 [
   {
-    "src": "/images/gallery/nathan-alspaugh-042.jpg",
-    "alt": "electronics workshop from above, Nathan Alspaugh",
+    "src": "/images/gallery/nathan-alspaugh-045.jpg",
+    "alt": "portrait at night by the Sydney Opera House, Nathan Alspaugh",
     "w": 900,
-    "h": 1600
+    "h": 675
   },
   {
     "src": "/images/gallery/nathan-alspaugh-043.jpg",
@@ -16,12 +16,6 @@
     "alt": "stack of custom keycaps, Nathan Alspaugh",
     "w": 1600,
     "h": 900
-  },
-  {
-    "src": "/images/gallery/nathan-alspaugh-045.jpg",
-    "alt": "portrait at night by the Sydney Opera House, Nathan Alspaugh",
-    "w": 900,
-    "h": 675
   },
   {
     "src": "/images/gallery/nathan-alspaugh-011.jpg",
@@ -188,6 +182,12 @@
   {
     "src": "/images/gallery/nathan-alspaugh-020.jpg",
     "alt": "torching cr\u00e8me br\u00fbl\u00e9e, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-042.jpg",
+    "alt": "electronics workshop from above, Nathan Alspaugh",
     "w": 900,
     "h": 1600
   },
