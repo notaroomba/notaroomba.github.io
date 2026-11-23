@@ -108,7 +108,6 @@ const crumbs = (...items) => ({
 });
 
 // ---- data
-const posts = readdirSync("src/posts").filter((f) => f.endsWith(".md")).map(parsePost).sort((a, b) => b.date.localeCompare(a.date));
 const gallery = JSON.parse(readFileSync("src/data/gallery.json", "utf8"));
 const projects = [...readFileSync("src/components/ProjectSection.tsx", "utf8").matchAll(/name: "([^"]+)",\s*url: "([^"]*)",\s*description:\s*"([^"]+)"/g)].map((m) => ({ name: m[1], url: m[2], description: m[3] }));
 const links = [
@@ -117,7 +116,7 @@ const links = [
   ["YouTube", "https://www.youtube.com/@notaroomba"],
   ["Instagram", "https://www.instagram.com/notaroomba"],
 ];
-const nav = `<nav><a href="/">home</a> · <a href="/blog/">blog</a> · <a href="/gallery/">gallery</a></nav>`;
+const nav = `<nav><a href="/">home</a></nav>`;
 
 // ---- home (rewrites docs/index.html itself)
 page({
@@ -130,57 +129,10 @@ page({
 <p>MIT '30 student. Previously took a gap year to work at Hack Club, before that led Icarus Club. I design PCBs and build hardware and software: modular keyboards, LED controllers, reflow hotplates, dev boards and flight computers.</p>
 <h2>Projects</h2>
 <ul>${projects.map((p) => `<li><strong>${esc(p.name)}</strong>: ${esc(p.description)}</li>`).join("")}</ul>
-<h2>Blog</h2>
-<ul>${posts.map((p) => `<li><a href="/blog/${p.slug}/">${esc(p.title)}</a>: ${esc(p.summary)}</li>`).join("")}</ul>
+<h2>Photos</h2>
+${gallery.map((g) => `<img src="${g.src}" alt="${esc(g.alt)}" width="${g.w}" height="${g.h}" loading="lazy" style="max-width:100%;height:auto">`).join("")}
 <h2>Contact</h2>
 <ul>${links.map(([n, h]) => `<li><a rel="me" href="${h}">${n}</a></li>`).join("")}</ul>`,
-});
-
-// ---- blog index
-page({
-  path: "/blog",
-  title: "blog | Nathan Alspaugh (NotARoomba)",
-  description: "Build logs by Nathan Alspaugh (NotARoomba): keyboards, LED controllers, hotplates and dev boards.",
-  image: posts[0]?.cover,
-  jsonLd: [
-    { "@context": "https://schema.org", "@type": "Blog", name: "Nathan Alspaugh's build log", url: url("/blog"), author: PERSON,
-      blogPost: posts.map((p) => ({ "@type": "BlogPosting", headline: p.title, url: url(`/blog/${p.slug}`), datePublished: p.date })) },
-    crumbs(["Home", "/"], ["Blog", "/blog"]),
-  ],
-  body: `${nav}<h1>blog</h1><ul>${posts.map((p) => `<li><a href="/blog/${p.slug}/">${esc(p.title)}</a> (${p.date}): ${esc(p.summary)}</li>`).join("")}</ul>`,
-});
-
-// ---- posts
-for (const p of posts) {
-  page({
-    path: `/blog/${p.slug}`,
-    title: `${p.title} | Nathan Alspaugh`,
-    description: p.summary,
-    image: p.cover,
-    type: "article",
-    jsonLd: [
-      { "@context": "https://schema.org", "@type": "BlogPosting", headline: p.title, description: p.summary,
-        datePublished: p.date, dateModified: p.date, url: url(`/blog/${p.slug}`), mainEntityOfPage: url(`/blog/${p.slug}`),
-        image: p.images.map((i) => abs(i.src)), author: PERSON, publisher: PERSON, inLanguage: "en",
-        ...(p.repo ? { isBasedOn: p.repo } : {}) },
-      crumbs(["Home", "/"], ["Blog", "/blog"], [p.title, `/blog/${p.slug}`]),
-    ],
-    body: `${nav}<article><h1>${esc(p.title)}</h1><p>${esc(p.summary)}</p><p>By <a href="/">Nathan Alspaugh</a> · ${p.date}${p.repo ? ` · <a href="${p.repo}">source on GitHub</a>` : ""}</p>${md(p.body)}</article>`,
-  });
-}
-
-// ---- gallery
-page({
-  path: "/gallery",
-  title: "gallery | Nathan Alspaugh (NotARoomba)",
-  description: "Photos of Nathan Alspaugh (NotARoomba), his friends and the things he builds.",
-  image: gallery[0]?.src,
-  jsonLd: [
-    { "@context": "https://schema.org", "@type": "ImageGallery", name: "Photos of Nathan Alspaugh", url: url("/gallery"), author: PERSON,
-      image: gallery.map((g) => ({ "@type": "ImageObject", contentUrl: abs(g.src), caption: g.alt, creator: PERSON, creditText: "Nathan Alspaugh", copyrightNotice: "Nathan Alspaugh" })) },
-    crumbs(["Home", "/"], ["Gallery", "/gallery"]),
-  ],
-  body: `${nav}<h1>gallery</h1>${gallery.map((g) => `<img src="${g.src}" alt="${esc(g.alt)}" width="${g.w}" height="${g.h}" loading="lazy" style="max-width:100%;height:auto">`).join("")}`,
 });
 
 // ---- flight controller guide
@@ -201,10 +153,7 @@ page({
 // ---- sitemap with images, robots
 const today = new Date().toISOString().slice(0, 10);
 const entries = [
-  { path: "/", lastmod: today, images: [{ src: "/images/avatar.png", alt: "Nathan Alspaugh" }] },
-  { path: "/blog", lastmod: posts[0]?.date },
-  ...posts.map((p) => ({ path: `/blog/${p.slug}`, lastmod: p.date, images: p.images })),
-  { path: "/gallery", lastmod: today, images: gallery },
+  { path: "/", lastmod: today, images: [{ src: "/images/avatar.png", alt: "Nathan Alspaugh" }, ...gallery] },
   { path: "/simpleflightcontroller" },
 ];
 writeFileSync(

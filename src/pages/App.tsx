@@ -2,14 +2,15 @@ import "react";
 import SideBar from "../components/SideBar";
 import ProjectsSection from "../components/ProjectSection";
 import AudioPlayer from "../components/AudioPlayer";
-import FloatingPhotos from "../components/FloatingPhotos";
-import { Github, Linkedin, Youtube, Instagram, BookOpen, Images, ArrowUpRight } from "lucide-react";
+import FloatingPhotos, { PhotoField } from "../components/FloatingPhotos";
+import { Github, Linkedin, Youtube, Instagram, ArrowUpRight } from "lucide-react";
 
 export default function App() {
   return (
     <div className="flex bg-black text-white_smoke overflow-x-hidden relative">
       <SideBar />
-      <div className="flex md:ml-72 ml-0 flex-col w-full mb-4 h-fit">
+      <div className="flex md:ml-72 ml-0 flex-col w-full mb-4 h-fit relative [&>section]:relative [&>section]:z-10">
+        <PhotoField />
         <section id="home" className="h-screen flex p-4">
           <div className="m-auto flex flex-col md:flex-row justify-center items-center text-center md:text-left">
             <img
@@ -133,14 +134,12 @@ export default function App() {
           <p className="text-lg md:text-xl text-white_smoke/70 mb-10 max-w-xl">
             want to build something, talk hardware, or just say hi? find me here.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-4xl">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
             {[
               { label: "github", handle: "@notaroomba", href: "https://github.com/notaroomba", Icon: Github },
               { label: "linkedin", handle: "in/notaroomba", href: "https://linkedin.com/in/notaroomba", Icon: Linkedin },
               { label: "youtube", handle: "@notaroomba", href: "https://youtube.com/@notaroomba", Icon: Youtube },
               { label: "instagram", handle: "@notaroomba", href: "https://instagram.com/notaroomba", Icon: Instagram },
-              { label: "blog", handle: "build logs", href: "/blog", Icon: BookOpen },
-              { label: "gallery", handle: "photos", href: "/gallery", Icon: Images },
             ].map(({ label, handle, href, Icon }) => {
               const external = href.startsWith("http");
               return (

@@ -6,9 +6,6 @@ import { createBrowserRouter, RouterProvider } from "react-router";
 import "../index.css";
 const SimpleFlightController = lazy(() => import("./pages/SimpleFlightController.tsx"));
 import ErrorPage from "./pages/ErrorPage.tsx";
-const Blog = lazy(() => import("./pages/Blog.tsx"));
-const BlogPost = lazy(() => import("./pages/BlogPost.tsx"));
-const GalleryPage = lazy(() => import("./pages/GalleryPage.tsx"));
 
 let router = createBrowserRouter([
   {
@@ -19,18 +16,9 @@ let router = createBrowserRouter([
     path: "/simpleflightcontroller",
     Component: SimpleFlightController,
   },
-  {
-    path: "/blog",
-    Component: Blog,
-  },
-  {
-    path: "/blog/:slug",
-    Component: BlogPost,
-  },
-  {
-    path: "/gallery",
-    Component: GalleryPage,
-  },
+
+
+
   {
     path: "*",
     Component: ErrorPage,
