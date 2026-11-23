@@ -1,21 +1,9 @@
 [
   {
-    "src": "/images/gallery/nathan-alspaugh-001.jpg",
-    "alt": "childhood photo building a wooden box, Nathan Alspaugh",
-    "w": 720,
-    "h": 960
-  },
-  {
-    "src": "/images/gallery/nathan-alspaugh-002.jpg",
-    "alt": "friends in a kitchen, Nathan Alspaugh",
-    "w": 1280,
-    "h": 853
-  },
-  {
-    "src": "/images/gallery/nathan-alspaugh-035.jpg",
-    "alt": "curve of the earth from a high-altitude balloon, Nathan Alspaugh",
+    "src": "/images/gallery/nathan-alspaugh-006.jpg",
+    "alt": "lying on a floor of cards with friends, Nathan Alspaugh",
     "w": 1600,
-    "h": 900
+    "h": 1200
   },
   {
     "src": "/images/gallery/nathan-alspaugh-004.jpg",
@@ -24,22 +12,34 @@
     "h": 1600
   },
   {
+    "src": "/images/gallery/nathan-alspaugh-035.jpg",
+    "alt": "curve of the earth from a high-altitude balloon, Nathan Alspaugh",
+    "w": 1600,
+    "h": 900
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-002.jpg",
+    "alt": "friends in a kitchen, Nathan Alspaugh",
+    "w": 1280,
+    "h": 853
+  },
+  {
     "src": "/images/gallery/nathan-alspaugh-005.jpg",
     "alt": "Athena v1 flight computer, Nathan Alspaugh",
     "w": 900,
     "h": 1600
   },
   {
-    "src": "/images/gallery/nathan-alspaugh-006.jpg",
-    "alt": "lying on a floor of cards with friends, Nathan Alspaugh",
-    "w": 1600,
-    "h": 1200
-  },
-  {
     "src": "/images/gallery/nathan-alspaugh-007.jpg",
     "alt": "Ember v1 hotplate in hand, Nathan Alspaugh",
     "w": 1600,
     "h": 900
+  },
+  {
+    "src": "/images/gallery/nathan-alspaugh-001.jpg",
+    "alt": "childhood photo building a wooden box, Nathan Alspaugh",
+    "w": 720,
+    "h": 960
   },
   {
     "src": "/images/gallery/nathan-alspaugh-008.jpg",
