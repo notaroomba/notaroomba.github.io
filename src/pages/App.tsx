@@ -25,7 +25,7 @@ export default function App() {
               <h1 className="text-5xl md:text-7xl xl:text-8xl font-extrabold tracking-tight leading-none mt-1">
                 Nathan Alspaugh
               </h1>
-              <p className="mt-2 text-xl md:text-3xl font-semibold text-white_smoke/60">NotARoomba</p>
+              <p className="mt-2 text-sm md:text-base text-white_smoke/50">(i also go by notaroomba)</p>
               <p className="mt-6 text-lg md:text-2xl font-normal leading-snug text-white_smoke/90">
                 full-stack developer and hardware magician who builds a bit of{" "}
                 <span className="relative inline-block">
