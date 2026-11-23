@@ -105,9 +105,9 @@ export default function App() {
                   color: `hsl(${Math.random() * 360}, 80%, 60%)`,
                 }}
               >
-                obscenities
-              </span>{" "}
-              with code.
+                silly projects
+              </span>
+              .
             </p>
           </div>
 
