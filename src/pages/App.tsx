@@ -20,7 +20,7 @@ export default function App() {
     <div className="flex bg-black text-white_smoke overflow-x-hidden relative">
       <SideBar />
       <div className="flex md:ml-72 ml-0 flex-col w-full mb-4 h-fit">
-        <section id="home" className="min-h-screen flex p-4 pb-28 md:pb-4">
+        <section id="home" className="min-h-[min(100vh,1000px)] flex p-4 pb-28 md:pb-4">
           <div className="m-auto flex flex-col md:flex-row justify-center items-center text-center md:text-left">
             <img
               src="/images/nathan-alspaugh-square.jpg"
@@ -71,7 +71,7 @@ export default function App() {
         {/* About Section */}
         <section
           id="about"
-          className="min-h-screen relative px-4 md:px-8 py-8 md:py-16"
+          className="min-h-[min(100vh,1000px)] relative px-4 md:px-8 py-8 md:py-16"
         >
           <div className="sticky top-0 z-10 bg-black/50 backdrop-blur-sm p-4 md:p-6 rounded-xl max-w-2xl">
             <h2 className="font-extrabold text-5xl lg:text-8xl mb-4">
@@ -141,7 +141,7 @@ export default function App() {
         </section>
 
         {/* Projects Section */}
-        <section id="projects" className="min-h-screen relative">
+        <section id="projects" className="min-h-[min(100vh,1000px)] relative">
           <div className="sticky top-0 pt-8 px-4 md:px-8 z-10 bg-black/30 backdrop-blur-sm mb-10">
             <h2 className="text-5xl lg:text-8xl font-extrabold mb-4">
               projects
@@ -158,7 +158,7 @@ export default function App() {
         {/* Contact Section */}
         <section
           id="contact"
-          className="min-h-screen relative px-4 md:px-8 py-16 w-full flex flex-col justify-center"
+          className="min-h-[min(100vh,1000px)] relative px-4 md:px-8 py-16 w-full flex flex-col justify-center"
         >
           <h2 className="font-extrabold text-5xl lg:text-8xl mb-10">contact</h2>
           <div className="flex flex-col gap-6">
