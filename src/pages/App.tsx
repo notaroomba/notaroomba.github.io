@@ -23,9 +23,9 @@ export default function App() {
             <div className="flex flex-col my-auto px-3 items-center md:items-start max-w-2xl">
               <p className="text-lg md:text-2xl font-normal text-white_smoke/70">hey there, i&apos;m</p>
               <h1 className="text-5xl md:text-7xl xl:text-8xl font-extrabold tracking-tight leading-none mt-1">
-                NotARoomba
+                Nathan Alspaugh
               </h1>
-              <p className="mt-2 text-xl md:text-3xl font-semibold text-white_smoke/60">Nathan Alspaugh</p>
+              <p className="mt-2 text-xl md:text-3xl font-semibold text-white_smoke/60">NotARoomba</p>
               <p className="mt-6 text-lg md:text-2xl font-normal leading-snug text-white_smoke/90">
                 full-stack developer and hardware magician who builds a bit of{" "}
                 <span className="relative inline-block">
