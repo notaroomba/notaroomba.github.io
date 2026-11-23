@@ -82,7 +82,7 @@ export default function App() {
                 hardware design
               </span>
               . i am an avid{" "}
-              <span className="font-bold text-[#f1c40f]">
+              <span className="font-bold text-[#2ecc71]">
                 musician/composer
               </span>{" "}
               (of the songs at the bottom right) where i play piano, cello and
