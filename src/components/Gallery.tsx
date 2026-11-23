@@ -21,7 +21,7 @@ function tile(p: Photo, i: number) {
 
 export function PhotoCell({ p, className = "" }: { p: Photo; className?: string }) {
   return (
-    <div className={`group overflow-hidden bg-white/5 ${className}`}>
+    <div className={`group overflow-hidden rounded-md bg-white/5 ${className}`}>
       <img
         src={p.src}
         alt={p.alt}
@@ -36,7 +36,7 @@ export function PhotoCell({ p, className = "" }: { p: Photo; className?: string 
 
 export default function Gallery() {
   return (
-    <div className="grid grid-cols-4 md:grid-cols-8 auto-rows-[90px] md:auto-rows-[140px] grid-flow-dense gap-1">
+    <div className="grid grid-cols-4 md:grid-cols-8 auto-rows-[90px] md:auto-rows-[140px] grid-flow-dense gap-2">
       {photos.map((p, i) => (
         <PhotoCell key={p.src} p={p} className={tile(p, i)} />
       ))}

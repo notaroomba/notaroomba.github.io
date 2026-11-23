@@ -2,15 +2,14 @@ import "react";
 import SideBar from "../components/SideBar";
 import ProjectsSection from "../components/ProjectSection";
 import AudioPlayer from "../components/AudioPlayer";
-import FloatingPhotos, { PhotoField } from "../components/FloatingPhotos";
+import Gallery from "../components/Gallery";
 import { Github, Linkedin, Youtube, Instagram, ArrowUpRight } from "lucide-react";
 
 export default function App() {
   return (
     <div className="flex bg-black text-white_smoke overflow-x-hidden relative">
       <SideBar />
-      <div className="flex md:ml-72 ml-0 flex-col w-full mb-4 h-fit relative [&>section]:relative [&>section]:z-10">
-        <PhotoField />
+      <div className="flex md:ml-72 ml-0 flex-col w-full mb-4 h-fit">
         <section id="home" className="min-h-screen flex p-4 pb-28 md:pb-4">
           <div className="m-auto flex flex-col md:flex-row justify-center items-center text-center md:text-left">
             <img
@@ -112,7 +111,9 @@ export default function App() {
             </p>
           </div>
 
-          <FloatingPhotos />
+          <div className="mt-12 px-4 md:px-8">
+            <Gallery />
+          </div>
         </section>
 
         {/* Projects Section */}
