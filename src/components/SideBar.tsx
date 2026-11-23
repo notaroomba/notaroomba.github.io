@@ -172,6 +172,13 @@ export default function SideBar() {
               blog
               <span className="block transition-all duration-500 h-1 bg-argentinian_blue max-w-0 group-hover:max-w-full"></span>
             </RouterLink>
+            <RouterLink
+              to="/gallery"
+              className="text-3xl md:text-4xl lg:text-5xl font-semibold group cursor-pointer max-w-fit mx-auto duration-300 transition-all text-white_smoke/70 hover:text-white_smoke"
+            >
+              gallery
+              <span className="block transition-all duration-500 h-1 bg-argentinian_blue max-w-0 group-hover:max-w-full"></span>
+            </RouterLink>
           </div>
           <span className="absolute right-0 h-5/6 top-1/2 -translate-y-1/2 w-0.5 bg-white/30" />
         </div>

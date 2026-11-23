@@ -75,7 +75,7 @@ export default function AudioPlayer() {
   };
 
   return (
-    <div className="fixed bottom-12 right-8 bg-black/80  backdrop-blur-sm p-4 rounded-xl border-4 border-argentinian_blue/80 z-50 shadow-lg w-[200px] animate-fadeIn">
+    <div className="fixed bottom-12 right-8 xl:right-64 bg-black/80  backdrop-blur-sm p-4 rounded-xl border-4 border-argentinian_blue/80 z-50 shadow-lg w-[200px] animate-fadeIn">
       <audio
         ref={audioRef}
         src={tracks[currentTrackIndex].url}

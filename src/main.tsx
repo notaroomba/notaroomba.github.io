@@ -8,6 +8,7 @@ import SimpleFlightController from "./pages/SimpleFlightController.tsx";
 import ErrorPage from "./pages/ErrorPage.tsx";
 import Blog from "./pages/Blog.tsx";
 import BlogPost from "./pages/BlogPost.tsx";
+import GalleryPage from "./pages/GalleryPage.tsx";
 
 let router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ let router = createBrowserRouter([
   {
     path: "/blog/:slug",
     Component: BlogPost,
+  },
+  {
+    path: "/gallery",
+    Component: GalleryPage,
   },
   {
     path: "*",

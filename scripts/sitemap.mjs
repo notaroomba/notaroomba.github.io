@@ -10,7 +10,7 @@ const posts = readdirSync("src/posts")
     const date = raw.match(/^date:\s*(.+)$/m)?.[1].trim();
     return { path: `/blog/${f.replace(/\.md$/, "")}`, date };
   });
-const pages = [{ path: "/" }, { path: "/blog" }, { path: "/simpleflightcontroller" }, ...posts];
+const pages = [{ path: "/" }, { path: "/blog" }, { path: "/gallery" }, { path: "/simpleflightcontroller" }, ...posts];
 
 writeFileSync(
   "docs/sitemap.xml",

@@ -1,0 +1,86 @@
+[
+  {
+    "src": "/images/blog/keybytes/keybytes-v1-working.jpg",
+    "alt": "Keybytes, a modular keyboard by Nathan Alspaugh",
+    "w": 1600,
+    "h": 900,
+    "placeholder": true
+  },
+  {
+    "src": "/images/blog/ledify/ledify-first-light.jpg",
+    "alt": "Ledify LED controller lighting up its first strip",
+    "w": 675,
+    "h": 1200,
+    "placeholder": true
+  },
+  {
+    "src": "/images/blog/trace/trace-built.jpg",
+    "alt": "Trace PCB ruler by Nathan Alspaugh",
+    "w": 1600,
+    "h": 752,
+    "placeholder": true
+  },
+  {
+    "src": "/images/blog/cyberboard/cyberboard-v2-built.jpg",
+    "alt": "Cyberboard v2 dev board",
+    "w": 1200,
+    "h": 674,
+    "placeholder": true
+  },
+  {
+    "src": "/images/blog/ember/ember-built.jpg",
+    "alt": "Ember reflow hotplate by Nathan Alspaugh",
+    "w": 900,
+    "h": 900,
+    "placeholder": true
+  },
+  {
+    "src": "/images/ledify.jpg",
+    "alt": "Ledify board",
+    "w": 1200,
+    "h": 1200,
+    "placeholder": true
+  },
+  {
+    "src": "/images/athena.jpg",
+    "alt": "Athena",
+    "w": 675,
+    "h": 1200,
+    "placeholder": true
+  },
+  {
+    "src": "/images/linea.jpg",
+    "alt": "Linea",
+    "w": 675,
+    "h": 1200,
+    "placeholder": true
+  },
+  {
+    "src": "/images/luma.jpg",
+    "alt": "Luma",
+    "w": 675,
+    "h": 1200,
+    "placeholder": true
+  },
+  {
+    "src": "/images/cybercard.jpg",
+    "alt": "Cybercard",
+    "w": 675,
+    "h": 1200,
+    "placeholder": true
+  },
+  {
+    "src": "/images/sfc.png",
+    "alt": "Simple flight controller render",
+    "w": 512,
+    "h": 512,
+    "placeholder": true
+  },
+  {
+    "src": "/images/blog/keybytes/keybytes-keybit-v2-render.jpg",
+    "alt": "Keybit v2 render",
+    "w": 1600,
+    "h": 900,
+    "placeholder": true
+  }
+]

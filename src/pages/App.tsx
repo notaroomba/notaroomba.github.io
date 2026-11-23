@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import TechBox from "../components/TechBox";
 import ProjectsSection from "../components/ProjectSection";
 import AudioPlayer from "../components/AudioPlayer";
+import { PhotoColumn } from "../components/Gallery";
 
 export default function App() {
   const technologies = [
@@ -97,7 +98,7 @@ export default function App() {
   return (
     <div className="flex bg-black text-white_smoke overflow-x-hidden relative">
       <SideBar />
-      <div className="flex md:ml-72 ml-0 flex-col w-full mb-4 h-fit">
+      <div className="flex md:ml-72 ml-0 xl:mr-56 flex-col w-full mb-4 h-fit">
         <section id="home" className="h-screen flex p-4">
           <div className="m-auto flex flex-col md:flex-row justify-center items-center text-center md:text-left">
             <img
@@ -107,7 +108,7 @@ export default function App() {
             />
             <div className="flex flex-col my-auto px-3">
               <p className="text-2xl md:text-3xl font-normal">hey there, im</p>
-              <p className="text-5xl md:text-8xl font-extrabold">NotARoomba</p>
+              <p className="text-5xl md:text-8xl xl:text-7xl 2xl:text-8xl font-extrabold">NotARoomba</p>
               <p className="text-xl md:text-xl font-normal relative">
                 a full-stack developer/hardware magician who does a bit of
               </p>
@@ -339,6 +340,7 @@ export default function App() {
           </div>
         </section>
       </div>
+      <PhotoColumn />
       <AudioPlayer />
       <footer className="text-center w-full text-neutral-500 text-sm p-4 absolute bottom-0 left-1/2 -translate-x-1/2">
         &copy; 2025 Nathan Alspaugh
