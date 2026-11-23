@@ -43,20 +43,3 @@ export default function Gallery() {
     </div>
   );
 }
-
-// A column of photos fixed to the right edge that drifts as the page scrolls.
-export function PhotoColumn() {
-  const list = [...photos, ...photos];
-  return (
-    <aside
-      aria-hidden="true"
-      className="hidden xl:block fixed right-0 top-0 h-screen w-56 overflow-hidden z-30 border-l border-white/10"
-    >
-      <div className="flex flex-col gap-1 animate-[drift_120s_linear_infinite] hover:[animation-play-state:paused]">
-        {list.map((p, i) => (
-          <PhotoCell key={i} p={p} className="w-full aspect-[4/5]" />
-        ))}
-      </div>
-    </aside>
-  );
-}

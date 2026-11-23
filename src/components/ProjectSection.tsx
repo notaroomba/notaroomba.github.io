@@ -92,22 +92,6 @@ export default function ProjectsSection() {
       imageSrc: "/images/luma.jpg",
     },
     {
-      name: "Smooth Talking",
-      url: "https://smoothtalking.notaroomba.dev",
-      description:
-        "An AI-Powered Dinosaur Debate Game. Debate with AI dinosaurs to earn coins. Each dinosaur has unique personalities, likes, and dislikes. Earn coins by triggering conversation rules while avoiding topics that might end the game!",
-      githubUrl: "https://github.com/NotARoomba/SmoothTalking",
-      imageSrc: "/images/smoothtalking.png",
-    },
-    {
-      name: "Mangrov",
-      url: "https://mangrov.notaroomba.dev",
-      description:
-        "Mangrov is a sustainable shopping platform that connects eco-conscious consumers with personalized, AI-powered product recommendations. Built with React, TypeScript, and Firebase, it offers features like community trading, real-time messaging, interactive product cards, and dark mode.",
-      githubUrl: "https://github.com/NotARoomba/Mangrov",
-      imageSrc: "/images/mangrov.png",
-    },
-    {
       name: "Niveles De Niveles",
       url: "https://nivelesdeniveles.org",
       description:
