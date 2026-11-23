@@ -3,7 +3,7 @@ import SideBar from "../components/SideBar";
 import ProjectsSection from "../components/ProjectSection";
 import AudioPlayer from "../components/AudioPlayer";
 import Gallery from "../components/Gallery";
-import { Github, Linkedin, Youtube, Instagram, ArrowUpRight } from "lucide-react";
+import { Github, Linkedin, Youtube, Instagram } from "lucide-react";
 
 export default function App() {
   return (
@@ -128,30 +128,29 @@ export default function App() {
           <p className="text-lg md:text-xl text-white_smoke/70 mb-10 max-w-xl">
             want to build something, talk hardware, or just say hi? find me here.
           </p>
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-2xl">
+          <div className="flex flex-col gap-10">
             {[
-              { label: "github", handle: "@notaroomba", href: "https://github.com/notaroomba", Icon: Github },
-              { label: "linkedin", handle: "in/notaroomba", href: "https://linkedin.com/in/notaroomba", Icon: Linkedin },
-              { label: "youtube", handle: "@notaroomba", href: "https://youtube.com/@notaroomba", Icon: Youtube },
-              { label: "instagram", handle: "@notaroomba", href: "https://instagram.com/notaroomba", Icon: Instagram },
-            ].map(({ label, handle, href, Icon }) => {
-              const external = href.startsWith("http");
-              return (
-                <a
-                  key={label}
-                  href={href}
-                  {...(external ? { target: "_blank", rel: "me noopener noreferrer" } : {})}
-                  className="group flex items-center gap-4 rounded-xl border border-white/10 bg-white/[0.03] p-5 hover:border-argentinian_blue hover:bg-argentinian_blue/10 transition-colors"
+              { label: "github", href: "https://github.com/notaroomba", Icon: Github, color: "#6e5494" },
+              { label: "linkedin", href: "https://linkedin.com/in/notaroomba", Icon: Linkedin, color: "#0a66c2" },
+              { label: "youtube", href: "https://youtube.com/@notaroomba", Icon: Youtube, color: "#ff0000" },
+              { label: "instagram", href: "https://instagram.com/notaroomba", Icon: Instagram, color: "#e1306c" },
+            ].map(({ label, href, Icon, color }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="me noopener noreferrer"
+                className="group flex items-center gap-4 md:gap-6 text-4xl md:text-5xl w-fit"
+              >
+                <Icon size={48} className="shrink-0 transition-colors group-hover:[color:var(--brand)]" style={{ "--brand": color } as React.CSSProperties} />
+                <span
+                  className="font-bold underline underline-offset-8 decoration-4"
+                  style={{ textDecorationColor: color }}
                 >
-                  <Icon size={32} className="shrink-0 group-hover:text-argentinian_blue transition-colors" />
-                  <div className="min-w-0">
-                    <p className="text-2xl font-bold">{label}</p>
-                    <p className="text-white_smoke/60 truncate">{handle}</p>
-                  </div>
-                  <ArrowUpRight size={20} className="ml-auto opacity-40 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
-                </a>
-              );
-            })}
+                  {label}
+                </span>
+              </a>
+            ))}
           </div>
         </section>
       </div>
