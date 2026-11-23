@@ -125,10 +125,7 @@ export default function App() {
           id="contact"
           className="min-h-screen relative px-4 md:px-8 py-16 w-full flex flex-col justify-center"
         >
-          <h2 className="font-extrabold text-5xl lg:text-8xl mb-4">contact</h2>
-          <p className="text-lg md:text-xl text-white_smoke/70 mb-10 max-w-xl">
-            want to build something, talk hardware, or just say hi? find me here.
-          </p>
+          <h2 className="font-extrabold text-5xl lg:text-8xl mb-10">contact</h2>
           <div className="flex flex-col gap-10">
             {[
               { label: "github", href: "https://github.com/notaroomba", Icon: Github, color: "#6e5494" },
@@ -142,12 +139,10 @@ export default function App() {
                 target="_blank"
                 rel="me noopener noreferrer"
                 className="group flex items-center gap-4 md:gap-6 text-4xl md:text-5xl w-fit"
+                style={{ "--brand": color } as React.CSSProperties}
               >
-                <Icon size={48} className="shrink-0 transition-colors group-hover:[color:var(--brand)]" style={{ "--brand": color } as React.CSSProperties} />
-                <span
-                  className="font-bold underline underline-offset-8 decoration-4"
-                  style={{ textDecorationColor: color }}
-                >
+                <Icon size={48} className="shrink-0 transition-colors group-hover:[color:var(--brand)]" />
+                <span className="font-bold underline underline-offset-8 decoration-4 decoration-transparent group-hover:[text-decoration-color:var(--brand)] transition-colors">
                   {label}
                 </span>
               </a>
