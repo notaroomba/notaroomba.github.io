@@ -9,20 +9,29 @@ export interface Photo {
 
 export const photos = gallery as Photo[];
 
-// Square tiles, with a few 2x2 ones. The number of big tiles is picked so the
-// total cell count is a multiple of 8 (and 4), so the grid ends in a flat row.
-const big = new Set<number>();
-{
-  const n = photos.length;
-  let k = 0;
-  while ((n + 3 * k) % 8 !== 0) k++;
-  // offsets zig-zag the big tiles across the 8 columns instead of stacking them on the left
-  for (let i = 0; i < k; i++) big.add(Math.min(n - 1, Math.floor((i * n) / k) + [0, 6, 2, 4][i % 4]));
+// Justified rows: each row keeps the photos' real shapes at one shared height and
+// spans the full width, so every row (including the last) ends flush. `target` is
+// roughly how many landscape photos' worth of width a row holds.
+function rows(target: number) {
+  const ratio = (p: Photo) => p.w / p.h;
+  const total = photos.reduce((s, p) => s + ratio(p), 0);
+  const count = Math.max(1, Math.round(total / target));
+  const per = total / count;
+  const out: Photo[][] = Array.from({ length: count }, () => []);
+  let cum = 0;
+  // each photo goes to the row its midpoint falls in, so rows come out evenly filled
+  for (const p of photos) {
+    out[Math.min(count - 1, Math.floor((cum + ratio(p) / 2) / per))].push(p);
+    cum += ratio(p);
+  }
+  return out;
 }
+const desktopRows = rows(4);
+const mobileRows = rows(2);
 
-export function PhotoCell({ p, className = "" }: { p: Photo; className?: string }) {
+export function PhotoCell({ p, className = "", style }: { p: Photo; className?: string; style?: React.CSSProperties }) {
   return (
-    <div className={`group relative overflow-hidden rounded-md bg-white/5 ${className}`}>
+    <div className={`group relative overflow-hidden rounded-md bg-white/5 ${className}`} style={style}>
       <img
         src={p.src}
         alt={p.alt}
@@ -35,12 +44,28 @@ export function PhotoCell({ p, className = "" }: { p: Photo; className?: string 
   );
 }
 
+function Rows({ rows, className }: { rows: Photo[][]; className: string }) {
+  return (
+    <div className={`flex-col gap-2 ${className}`}>
+      {rows.map((row, i) => {
+        const sum = row.reduce((s, p) => s + p.w / p.h, 0);
+        return (
+          <div key={i} className="flex gap-2" style={{ aspectRatio: sum }}>
+            {row.map((p) => (
+              <PhotoCell key={p.src} p={p} className="h-full" style={{ flex: `${p.w / p.h} 1 0` }} />
+            ))}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
 export default function Gallery() {
   return (
-    <div className="grid grid-cols-4 md:grid-cols-8 grid-flow-dense gap-2">
-      {photos.map((p, i) => (
-        <PhotoCell key={p.src} p={p} className={big.has(i) ? "col-span-2 row-span-2 aspect-square" : "aspect-square"} />
-      ))}
-    </div>
+    <>
+      <Rows rows={desktopRows} className="hidden md:flex" />
+      <Rows rows={mobileRows} className="flex md:hidden" />
+    </>
   );
 }
