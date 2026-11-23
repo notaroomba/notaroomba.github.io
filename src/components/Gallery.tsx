@@ -10,24 +10,18 @@ export interface Photo {
 export const photos = gallery as Photo[];
 
 // Justified rows: each row keeps the photos' real shapes at one shared height and
-// spans the full width, so every row (including the last) ends flush. `target` is
-// roughly how many landscape photos' worth of width a row holds.
-function rows(target: number) {
-  const ratio = (p: Photo) => p.w / p.h;
-  const total = photos.reduce((s, p) => s + ratio(p), 0);
-  const count = Math.max(1, Math.round(total / target));
-  const per = total / count;
-  const out: Photo[][] = Array.from({ length: count }, () => []);
-  let cum = 0;
-  // each photo goes to the row its midpoint falls in, so rows come out evenly filled
-  for (const p of photos) {
-    out[Math.min(count - 1, Math.floor((cum + ratio(p) / 2) / per))].push(p);
-    cum += ratio(p);
+// spans the full width, so every row (including the last) ends flush. Rows follow a
+// fixed 3, 4, 3, 5 pattern; a lone photo at the end joins the row before it.
+const PATTERN = [3, 4, 3, 5];
+function rows() {
+  const out: Photo[][] = [];
+  for (let i = 0, k = 0; i < photos.length; i += PATTERN[k++ % PATTERN.length]) {
+    out.push(photos.slice(i, i + PATTERN[k % PATTERN.length]));
   }
+  if (out.length > 1 && out[out.length - 1].length === 1) out[out.length - 2].push(...out.pop()!);
   return out;
 }
-const desktopRows = rows(4);
-const mobileRows = rows(2);
+const galleryRows = rows();
 
 export function PhotoCell({ p, className = "", style }: { p: Photo; className?: string; style?: React.CSSProperties }) {
   return (
@@ -64,8 +58,7 @@ function Rows({ rows, className }: { rows: Photo[][]; className: string }) {
 export default function Gallery() {
   return (
     <>
-      <Rows rows={desktopRows} className="hidden md:flex" />
-      <Rows rows={mobileRows} className="flex md:hidden" />
+      <Rows rows={galleryRows} className="flex" />
     </>
   );
 }

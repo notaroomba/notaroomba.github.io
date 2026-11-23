@@ -1,9 +1,9 @@
 [
   {
-    "src": "/images/gallery/nathan-alspaugh-011.jpg",
-    "alt": "snowy park, Nathan Alspaugh",
-    "w": 1600,
-    "h": 900
+    "src": "/images/gallery/nathan-alspaugh-042.jpg",
+    "alt": "electronics workshop from above, Nathan Alspaugh",
+    "w": 900,
+    "h": 1600
   },
   {
     "src": "/images/gallery/nathan-alspaugh-043.jpg",
@@ -24,14 +24,20 @@
     "h": 675
   },
   {
+    "src": "/images/gallery/nathan-alspaugh-011.jpg",
+    "alt": "snowy park, Nathan Alspaugh",
+    "w": 1600,
+    "h": 900
+  },
+  {
     "src": "/images/gallery/nathan-alspaugh-053.jpg",
     "alt": "PCB under a microscope, Nathan Alspaugh",
     "w": 900,
     "h": 1600
   },
   {
-    "src": "/images/gallery/nathan-alspaugh-035.jpg",
-    "alt": "curve of the earth from a high-altitude balloon, Nathan Alspaugh",
+    "src": "/images/gallery/nathan-alspaugh-034.jpg",
+    "alt": "high-altitude balloon bursting, seen from the payload camera, Nathan Alspaugh",
     "w": 1600,
     "h": 900
   },
@@ -46,12 +52,6 @@
     "alt": "friends at an event, Nathan Alspaugh",
     "w": 1280,
     "h": 960
-  },
-  {
-    "src": "/images/gallery/nathan-alspaugh-042.jpg",
-    "alt": "electronics workshop from above, Nathan Alspaugh",
-    "w": 900,
-    "h": 1600
   },
   {
     "src": "/images/gallery/nathan-alspaugh-002.jpg",
@@ -90,8 +90,8 @@
     "h": 1600
   },
   {
-    "src": "/images/gallery/nathan-alspaugh-034.jpg",
-    "alt": "high-altitude balloon bursting, seen from the payload camera, Nathan Alspaugh",
+    "src": "/images/gallery/nathan-alspaugh-035.jpg",
+    "alt": "curve of the earth from a high-altitude balloon, Nathan Alspaugh",
     "w": 1600,
     "h": 900
   },
