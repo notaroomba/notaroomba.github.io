@@ -38,7 +38,7 @@ export function PhotoCell({ p, className = "", style }: { p: Photo; className?: 
         title={p.alt}
         loading="lazy"
         decoding="async"
-        className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-[1.03] transition-[filter,transform] duration-500"
+        className="absolute inset-0 w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500"
       />
     </div>
   );
