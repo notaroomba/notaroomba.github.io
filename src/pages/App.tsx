@@ -4,13 +4,14 @@ import ProjectsSection from "../components/ProjectSection";
 import AudioPlayer from "../components/AudioPlayer";
 import Gallery from "../components/Gallery";
 import { Mail } from "lucide-react";
-import { Github, Linkedin, Youtube, Instagram } from "../components/BrandIcons";
+import { Github, Linkedin, Youtube, Instagram, X } from "../components/BrandIcons";
 
 const SOCIALS = [
   { label: "github", href: "https://github.com/notaroomba", Icon: Github, color: "#6e5494" },
   { label: "linkedin", href: "https://linkedin.com/in/notaroomba", Icon: Linkedin, color: "#0a66c2" },
   { label: "youtube", href: "https://youtube.com/@notaroomba", Icon: Youtube, color: "#ff0000" },
   { label: "instagram", href: "https://instagram.com/notaroomba", Icon: Instagram, color: "#e1306c" },
+  { label: "x", href: "https://x.com/notaroomba", Icon: X, color: "#ffffff" },
   { label: "ndal@mit.edu", href: "mailto:ndal@mit.edu", Icon: Mail, color: "#a31f34" },
 ];
 
